@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+/* header */
+header .container{
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+border-bottom: 1px solid #ccc;
+}
+header .container h3{
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+header .container nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+header .container nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
+header .container .search-bar input[type="search"] {
+position: relative;
+padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-right: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+}
+
+
+header .container .search-bar button{
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    right: 60px;
+}
+.active{
+border-bottom: 1px solid #000;
+}
+@media (max-width: 768px) {
+    header .container nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header .container h3 {
+       display: none;
+    }
+    header .container .search-bar {
+    float: right;
+    }
+}
+@media (max-width: 900px){
+    header .container nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header .container h3 {
+       display: none;
+    }
+    header .container .search-bar {
+    float: right;
+    }
+}
+/* end header */
+
+
+
+/* main */
+section .container{
+    display: flex;
+gap: 300px;
+align-items: center;
+} 
+section .container .img-login img{
+    margin: 50px 0;
+}
+section .container .details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+section .container .details .title{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+section .container .details .title h1{
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+section .container .details .title p{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+section .container .details form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+section .container .details form .google{
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-align: center;
+}
+section .container .details form .google i{
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+}
+section .container .details form #error{
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+section .container .details form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+  border-bottom: 1px solid #cccccc;
+}
+section .container .details .submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .container .details .submit button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    background-color: #DB4444;
+    color: #fff;
+    transition: 0.5s;
+}
+section .container .details .submit button:hover{
+    background-color: #c23d3db8;
+}
+section .container .details .submit a{
+    color: #DB4444;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    section .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    section .container .img-login img{
+        margin: 0;
+        width: 200px;
+    }
+    section .container .details{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 900px){
+    section .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    section .container .img-login img{
+        margin: 0;
+        width: 200px;
+    }
+    section .container .details{
+        margin-top: 50px;
+    }
+}
+/* end main section */
+
+
+
+/* footer */
+footer .container{
+display: flex;
+justify-content: space-around;
+background-color: #000;
+color: #fff;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    height: 300px;
+    margin-top: 100px;
+}
+footer .container .first-side , .second-side , .third-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+footer .container .first-side h4{
+cursor: pointer;
+}
+footer .container .first-side .email-inp input{
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #cccccc;
+    color: #fff;
+}
+footer .container .first-side .email-inp i{
+cursor: pointer;
+color: #fff;
+}
+footer .container .third-side a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .container .second-side,.third-side h4
+{
+font-size: 20px;
+font-weight: 100;
+}
+footer .container .fourth-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer .container .fourth-side .social{
+    display: flex;
+    gap: 20px;
+}
+footer .container .fourth-side .social a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}
